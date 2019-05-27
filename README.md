@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/navicore/lots-of-names-api-py.svg?branch=master)](https://travis-ci.org/navicore/lots-of-names-api-py)
+
 Python3 Practice Repo
 ==========
 
