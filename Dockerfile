@@ -28,7 +28,7 @@ ENTRYPOINT ["/usr/bin/uwsgi", \
             "--master", \
             "--die-on-term", \
             "--plugin", "python3"]
-CMD ["--http-socket", "0.0.0.0:8000", \
+CMD ["--http-socket", "0.0.0.0:5000", \
      "--processes", "4", \
      "--chdir", "/app", \
      "--check-static", "static", \

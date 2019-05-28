@@ -11,3 +11,11 @@ Struggling with best practice for local dev, dockerfile, and pipenv for reliable
 
 
 This repo starts a python http api server and then calls another api to satisfy the request.
+
+
+local dev
+-----------
+
+```console`
+pipenv run python ./lots_of_names_api/__init__.py
+```
