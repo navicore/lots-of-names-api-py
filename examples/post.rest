@@ -1,6 +1,6 @@
+https://lotsofnames.navicore.tech
 #http://localhost:5000
 #http://localhost:8000
-https://lotsofnames.navicore.tech
 
 -ks
 
