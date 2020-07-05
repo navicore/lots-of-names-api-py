@@ -24,6 +24,7 @@ RUN set -xe \
  && useradd _uwsgi --no-create-home --user-group
 USER _uwsgi
 ADD static /app/static
+RUN apt-get install ca-certificates
 ENTRYPOINT ["/usr/bin/uwsgi", \
             "--master", \
             "--die-on-term", \
