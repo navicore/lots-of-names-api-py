@@ -11,6 +11,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN set -xe \
  && apt-get update -q \
  && apt-get install -y -q \
+        ca-certificates \
         python3-wheel \
         python3-pip \
         uwsgi-plugin-python3 \
@@ -24,7 +25,6 @@ RUN set -xe \
  && useradd _uwsgi --no-create-home --user-group
 USER _uwsgi
 ADD static /app/static
-RUN apt-get install ca-certificates
 ENTRYPOINT ["/usr/bin/uwsgi", \
             "--master", \
             "--die-on-term", \
