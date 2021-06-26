@@ -1,9 +1,7 @@
-[![Build Status](https://travis-ci.org/navicore/lots-of-names-api-py.svg?branch=master)](https://travis-ci.org/navicore/lots-of-names-api-py)
-
 Python3 Practice Repo
 ==========
 
-a practice python env per:
+A practice python env per:
 
 https://medium.com/@greut/building-a-python-package-a-docker-image-using-pipenv-233d8793b6cc
 
@@ -17,5 +15,6 @@ local dev
 -----------
 
 ```console`
-pipenv run python ./lots_of_names_api/__init__.py
+pipenv install
+pipenv run python3 ./lots-of-names-api/__init__.py
 ```
