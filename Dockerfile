@@ -33,7 +33,7 @@ RUN pipenv install --dev \
  && pipenv lock -r > requirements.txt \
  && pipenv run python setup.py bdist_wheel
 
-FROM ubuntu:bionic
+FROM ubuntu:jammy
 COPY --from=build /app/dist/*.whl .
 ARG DEBIAN_FRONTEND=noninteractive
 RUN set -xe \
