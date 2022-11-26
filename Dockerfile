@@ -1,4 +1,4 @@
-FROM heroku/heroku:18-build as build
+FROM heroku/heroku:22-build as build
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV LC_ALL C.UTF-8
